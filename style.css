@@ -6,6 +6,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 
@@ -33,7 +34,7 @@ body, h1, h2, ul {
 
 /* Style the header and navigation */
 header {
-    background-color:#eaeaea;
+    background-color:#fff;
     padding: 20px 0;
     text-align: center;
 }
@@ -48,7 +49,7 @@ nav {
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 37px;
     font-weight: bold;
     
 }
@@ -57,27 +58,28 @@ span{
     color:cornflowerblue;
 }
 
+.navbar{
+    margin-left: 100px;
+}
+
 ul {
     list-style: none;
-    display: flex;
-    margin-left: 800px;    
+    display: flex;     
 }
 
 li {
     margin: 0 15px;
     font-size: 24px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
-}
-
-.header i{
-    font-size: 50px;
+    margin-left: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
 }
 
 .btn{
     display: inline-block;
-    padding: 1rem 2.8rem;
+    padding: 0.9rem 1.3rem;
     background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 75%);
-background-color: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 75%);
+    background-color: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 75%);
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.4rem;
@@ -99,17 +101,140 @@ a {
     font-size: 21px;
     font-weight: 900;
     
-    
 }
 
 a:hover {
-    color:cornflowerblue;
+    transition: 0.5s ;
 }
 
-.section{
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
-    color: var(--text-color);
+ /* Style for the search bar container */
+ .search-container {
+    display: flex;
+    width: 500px;
+    margin: 0 auto;
+    margin-left: 100px;
+     
 }
+
+/* Style for the search input field */
+.search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+/* Style for the search button */
+.search-button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-button .i{
+    font-size: 10rem;
+}
+
+/*container*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.container .post{
+    flex: 1 1 30rem;
+    background: #fff;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: 0.5s ease;
+}
+
+.container .post:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+h1{
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 24px;
+}
+
+h2{
+    font-size: 19px;
+    text-align: left; /* Set text alignment to left (default) */
+    margin-left: 0; /* Reset left margin to 0 */
+    padding-left: 0; /* Reset left padding to 0 */
+}
+
+.post h2{
+    margin-left: 16px;
+    margin-bottom: 7px;
+}
+
+p{
+    font-size: 16px;
+    text-align: left; /* Set text alignment to left (default) */
+    margin-left: 0; /* Reset left margin to 0 */
+    padding-left: 0; /* Reset left padding to 0 */
+}
+
+.post p{
+    margin-left: 16px;
+}
+
+.post .btn{
+    margin-right: 370px;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    padding: 0.9rem 1.3rem;
+}
+
+.circular-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Makes the container circular */
+    overflow: hidden; /* Clips the image to the container's shape */
+}
+
+/* Style for the image inside the circular container */
+.circular-image {
+    width: 40px;
+    height: 40px;
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+.home-content {
+    display: flex; /* Display side by side */
+    align-items: center; /* Vertically center */
+    align-self: auto;
+    max-width: 8000px;
+    max-height: 500px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add spacing around the container */
+}
+
+.img img{
+    margin-top: 19px;
+    width: 350px;
+    height: 250px;
+    margin-right: 100px;
+    border-radius: 2rem;
+}
+
+
+
 
 
